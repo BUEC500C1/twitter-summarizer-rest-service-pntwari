@@ -31,4 +31,4 @@ For example: processtwitter(Boston) shall return a video called Boston.mp4. This
 This video is within the /results folder. 
 It also returns the images used to create the video. 
 
-The project is written in Python. It relies heavily on the twitter API, ffmpeg and the PIL library. 
+The project is written in Python. It relies heavily on the twitter API, ffmpeg and the PIL library. Supporting codes are used to pull tweets and create the images 

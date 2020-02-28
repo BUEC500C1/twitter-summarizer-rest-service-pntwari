@@ -20,12 +20,6 @@ from PIL import Image, ImageDraw, ImageFont
 # font_name = 'consolab.ttf'
 # font = ImageFont.truetype(os.path.join(fonts_dir, font_name), 15)
 
-def makevideo():
-    command = "ffmpeg -i {video} -ac 1  -f flac -vn {output}".format(video=video, output=output)
-    command = "ffmpeg -r 60 -f image2 -s 1920x1080 -i %d.png -vcodec libx264 -crf 25 -pix_fmt yuv420p test.mp4"
-    subprocess.call(command,shell=True)
-
-
 #def makeimages(item,tweet,count):
 def makeimages(item,tweets):
   background = Image.new('RGBA', (1024, 768), (255, 255, 255, 255))

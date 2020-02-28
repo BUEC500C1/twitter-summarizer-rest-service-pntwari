@@ -2,3 +2,4 @@ requests>=2.7.0
 pytest==4.6.1
 ffmpeg
 tweepy
+PIL

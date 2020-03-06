@@ -38,12 +38,12 @@ def makevideo(item):
   
   #print(command)
 
-  # path=os.getcwd()
-  # path=path+"/results/"
-  # with cd(path):
-  #   subprocess.call(command,shell=True)
+  path=os.getcwd()
+  path=path+"/results/"
+  with cd(path):
+    subprocess.call(command,shell=True)
 
-  subprocess.call(command,shell=True)
+  #subprocess.call(command,shell=True)
 
 
 def main():

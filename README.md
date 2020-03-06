@@ -1,5 +1,5 @@
-# video-pntwari
-video-pntwari created by GitHub Classroom
+# twitter-summarizer-rest-service-pntwari
+twitter-summarizer-rest-service-pntwari created by GitHub Classroom
 
 ## Author:
 This project is created under the direction of Osama Alshaykh of Boston University as Homework 5 for EC500. 

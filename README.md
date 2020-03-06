@@ -2,20 +2,16 @@
 video-pntwari created by GitHub Classroom
 
 ## Author:
-This project is created bunder the direction of Osama Alshaykh of Boston University as Homework 4 for EC500. 
+This project is created under the direction of Osama Alshaykh of Boston University as Homework 5 for EC500. 
 Spring 2020.
 
 ## Introduction
 
-The files herein contribute to an a project whose design is to pull tweets about a certain topic and produce a video 
-summarizing those tweets. 
+This is a continuation of HW4. It builds on HW5 in that it adds the entire system into the REST framework whose core is provided by Flask. 
+Just like the original project, this code calls a few subcoded with the intent of creating a video with a summary of the most recent tweets about a certain topic. 
+Much like last time, the example shown in here is not quite real, as an example file was given so as to preserve the Twitter API keys. 
 
-The codes perform several functions:
-- create a queue of (2) for video requests in case there are several entities calling the service
-- create simultaneous threads (total of 2) that may run at the same time
-- download the tweets (3 at a time) on any topic of choice. This number is easily adjustable
-- create a cumulative images for these tweets i.e. create several images where the tweets add on, like a Microsoft Powerpoint transition
-- create a video adding together these tweets on the chosen topin
+One file from the original submission is edited and another is added. The modified is ffmpeg.py and the new one is basic.py
 
 ## How to Use
 Usage is simple. 
@@ -24,11 +20,12 @@ There are several core codes:
 - twitter.py
 - makeimage.py
 - ffmpeg.py
+- basic.py
 
 Within main.py, there is a function processtwitter(). 
-This is the only thing needed to call the API. 
-For example: processtwitter(Boston) shall return a video called Boston.mp4. This video contains 3 most recent tweets regarding Boston. 
-This video is within the /results folder. 
-It also returns the images used to create the video. 
+This is the central and brain of this procedure. 
 
-The project is written in Python. It relies heavily on the twitter API, ffmpeg and the PIL library. Supporting codes are used to pull tweets and create the images 
+However, calling is done through the end by calling the return url of what topic you would like to see a video for. 
+For example: 127.0.0.1/google returns, hypothecally, the most recent tweets regarding Google. 
+
+All the previous functions are still done. A front end web end is added. 

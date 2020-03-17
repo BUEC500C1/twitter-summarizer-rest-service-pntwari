@@ -29,3 +29,10 @@ However, calling is done through the end by calling the return url of what topic
 For example: 127.0.0.1/google returns, hypothecally, the most recent tweets regarding Google. 
 
 All the previous functions are still done. A front end web end is added. 
+
+To run locally, with flask installed, do this:
+export FLASK_APP=basic.py
+export FLASK_ENV=development
+flask run
+
+The http link shall appear for the web application.
